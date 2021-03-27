@@ -4,15 +4,16 @@ import os
 os.system("cls")
 
 running = True
-name = input("professeur Chêne: Bonjours mon amis comment t'appelle tu ?\n")
+name = input("professeur Chêne: Bonjours j'ai perdu ma fiche comment t'appelle tu deja ?\n")
 if name == "DEBUG":
-    pokemon2.invontory[0] = {"name": "potion", "effet": 10}
+    pokemon2.invontory.append({"name": "potion", "effet": 10})
     result = combat.combat(name, "<adverse>", pokemon2.evoli, pokemon2.pikachu)
-    print(result)
     if result == True:
         print("Bravo vous avez gagné !")
     if result == False:
         print("vous avez perdu :'(")
+    if result == None:
+        print('vous avez fuit, donc personne gagne...')
     exit()
 import time
 print("professeur Chêne: c'est un très bon nom {} ! D'ailleur je voudrais même te laisser choisir ton compagnion d'aventure... mais il n'en a plus, appart un c'est le seul qui nous reste il n'est pas pour les débutants comme toi donc attention".format(name))
