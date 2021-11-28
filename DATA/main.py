@@ -1,7 +1,9 @@
 import combat
 import pokemon2
 import os
-os.system("cls")
+import console
+
+console.clear()
 
 running = True
 name = input("professeur Chêne: Bonjours j'ai perdu ma fiche comment t'appelle tu deja ?\n")

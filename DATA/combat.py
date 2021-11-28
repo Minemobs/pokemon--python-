@@ -1,11 +1,12 @@
 import pokemon2 as poke2
 import time
 import os
+import console
 
 pokemon2 = poke2
 
 def combat(name, rival, pokemonr, pokemon):
-    os.system("cls")
+    console.clear()
     print("le combat commence !")
     time.sleep(2)
     print("{} sort un {}, vous sortez un {}".format(rival, pokemonr["name"], pokemon["name"]))
